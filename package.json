@@ -1,0 +1,19 @@
+{
+  "name": "hexacore",
+  "version": "1.0.0",
+  "description": "This is a project to digitilize gujarat startup management system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbhimanyuSingh2005/HexaCore.git"
+  },
+  "author": "Hexacore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AbhimanyuSingh2005/HexaCore/issues"
+  },
+  "homepage": "https://github.com/AbhimanyuSingh2005/HexaCore#readme"
+}
