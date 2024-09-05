@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const innovationSchema = new mongoose.Schema({
+const patentSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true
@@ -10,16 +10,20 @@ const innovationSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
-    innovatorsInvolved: {
+    inventorsInvolved: {
         type: Array,
         required: true
     },
-    associatedStartups: {
-        type: Array,
+    applicationStatus: {
+        type: String,
         required: true
     },
-    developmentStage: {
+    patentNumber: {
         type: String,
         required: true
     }
 });
+
+const Patent = mongoose.model('Patent', patentSchema);
+
+module.exports = Patent;

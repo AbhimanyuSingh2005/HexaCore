@@ -32,3 +32,7 @@ const startupSchema = new mongoose.Schema({
     }
 
 });
+
+const Startup = mongoose.model('Startup', startupSchema);
+
+module.exports = Startup;
