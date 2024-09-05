@@ -102,3 +102,16 @@ function authenticateToken(req, res, next) {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+//To check whether anyone is logged in or not
+function isLoggedIn() {
+  const token = localStorage.getItem('token');
+  return token !== null;
+}
+
+// Example usage
+if (isLoggedIn()) {
+  console.log('User is logged in');
+} else {
+  console.log('User is not logged in');
+}
