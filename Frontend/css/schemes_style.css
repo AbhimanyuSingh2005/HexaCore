@@ -1,45 +1,153 @@
+/* Apply flexbox for scheme container */
 .scheme_container {
     display: flex;
-    gap: 2em;
-    padding: 1em 3em;
     flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Styling each scheme (card) */
+.scheme_container .aos {
+    flex: 1 1 calc(33.333% - 40px); /* Three cards per row with gap adjustment */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+}
+
+/* Ensure images have the same size */
+.scheme_container .aos img {
+    width: 100%;
+    max-width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Scheme card hover effect */
+.scheme_container .aos:hover {
+    transform: translateY(-10px);
+}
+
+/* Styling buttons */
+.scheme_container .aos button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.scheme_container .aos button:hover {
+    background-color: #004a99;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .scheme_container .aos {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .scheme_container .aos {
+        flex: 1 1 100%;
+    }
+}
+
+/* Container for the navigation items */
+ul.nav_option {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-    & div {
-        width: clamp(250px, 30%, 400px);
-        padding: 1em 2em;
-        border-radius: 10px 0;
-        display: grid;
-        grid-template-columns: .7fr 1.3fr;
-        place-items: center;
-        gap: 1em;
-        box-shadow: 0px 0px 5px var(--menu_color);
+/* Styling for the search container */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
 
-        & img {
-            align-self: start;
-            display: block;
-            object-fit: contain;
-            width: 70%;
-        }
+.search-container input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
 
-        & p {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            text-overflow: ellipsis;
-            height: 4lh;
-            overflow: hidden;
-        }
+.search-container .search-btn {
+    background-color: #0066cc;
+    border: none;
+    padding: 8px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
 
-        & button {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-weight: 600;
-            padding: .5em 1em;
-            box-shadow: 0px 0px 5px var(--menu_color);
-            background: var(--background_gradient);
-        }
+.search-container .search-btn:hover {
+    background-color: #004a99;
+}
+
+.search-container img {
+    height: 15px;
+    width: 15px;
+}
+
+/* Flexbox for nav-btns */
+.nav_option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px; /* Adjust the gap between buttons */
+}
+
+.nav-btn {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1; /* Makes all buttons take up equal space */
+    text-align: center;
+}
+
+.nav-btn a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.nav-btn:hover {
+    background-color: #004a99;
+}
+
+/* Active state for buttons */
+.nav-btn.active {
+    background-color: #004a99;
+}
+
+/* Make the navigation responsive */
+@media screen and (max-width: 768px) {
+    ul.nav_option {
+        flex-wrap: wrap;
+    }
+    .nav-btn {
+        flex: 1 1 45%;
     }
 }
