@@ -12,46 +12,44 @@
     <nav>
         <ul class="nav_menu">
             <li>
-                <img src="../assets/logo.jpg" alt="">
+                <img src="../assets/logo.jpg" alt="" height="50px">
             </li>
             <li>
                 <img src="../assets/logo2.jpg" alt="" srcset="" height="50px">
             </li>
             <li class="input">
                 <input type="text" placeholder="Search">
-                <div><img src="https://aryansrivastava07.github.io/landing-page/assets/search.png" height="10px" alt="something"></div>
+                <div><img src="https://aryansrivastava07.github.io/landing-page/assets/search.png" height="10px"
+                        alt="something"></div>
             </li>
             <li class="login">
-                <h3>Login</h3>
-                <h3>Signup</h3>
+                <a href="login.html">
+                    <h3>Login</h3>
+                </a>
+                <a href="signup.html">
+                    <h3>Sign-up</h3>
+                </a>
             </li>
         </ul>
         <ul class="nav_option">
-            <a href="">
+            <a href="index.html">
                 <li class="active">Home</li>
             </a>
-            <a href="">
+            <a href="#about">
                 <li>About</li>
             </a>
-            <a href="">
-                <li>Funding</li>
-            </a>
-            <a href="">
+            <a href="schemes.html">
                 <li>Schemes</li>
             </a>
-            <a href="">
-                <li>Funding</li>
-            </a>
-            <a href="">
-                <li>Schemes</li>
-            </a>
-            <a href="">
-                <li>Funding</li>
-            </a>
-            <a href="">
+            <a href="Patent.html">
                 <li>Patents</li>
             </a>
-
+            <a href="user_dashboard.html">
+                <li>Dashboard</li>
+            </a>
+            <a href="chatbot.html">
+                <li>Support</li>
+            </a>
         </ul>
     </nav>
     <section class="head_container">
@@ -74,7 +72,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <h2>About</h2>
         <div class="about_container">
             Under the Startup India initiative, eligible companies can get recognised as Startups by DPIIT,
@@ -98,7 +96,6 @@
                     system will
                     analyze the content and extract the quiz elements automatically.
                 </p>
-
             </div>
             <div class="aos">
                 <img src="https://www.startupindia.gov.in/content/dam/invest-india/newhomepage/recognised.svg?raw=1"
@@ -189,7 +186,7 @@
                     your audience, students, or colleagues effortlessly.</p>
                 <button>Know more</button>
             </div>
-            <div class="state aos">
+            <!-- <div class="state aos">
                 <img src="https://www.startupindia.gov.in/content/dam/invest-india/newhomepage/notifications-icon.png"
                     alt="">
                 <b>Generate Instantly:</b>
@@ -199,7 +196,7 @@
                     with
                     your audience, students, or colleagues effortlessly.</p>
                 <button>Know more</button>
-            </div>
+            </div> -->
 
         </div>
 
@@ -261,9 +258,6 @@
             type();
         }, 500);
     }
-    // document.addEventListener("visibilitychange", () => {
-    //     document.getElementById("trans_con").innerHTML = trans_items[i - 1 >= 0 ? i - 1 : trans_items.length - 1];
-    // });
 </script>
 <script src="../js/aos.js"></script>
 
