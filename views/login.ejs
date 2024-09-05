@@ -7,6 +7,10 @@
     <title>Login</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             background-size: cover;
@@ -36,12 +40,14 @@
         }
 
         input[type="text"],
-        input[type="password"] {
+        input[type="password"],
+        select {
             width: 100%;
             padding: 15px;
             margin: 10px 0;
             border-radius: 5px;
             border: 1px solid #ccc;
+            background-color: #ffffff;
         }
 
         input[type="submit"] {
@@ -75,6 +81,12 @@
         <form onsubmit="redirectToDashboard(); return false;">
             <input type="text" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Password" required>
+            <select value="">
+                <option value="">Role</option>
+                <option value="">fef</option>
+                <option value="">fef</option>
+                <option value="">fef</option>
+            </select>
             <input type="submit" value="Login">
         </form>
     </div>
