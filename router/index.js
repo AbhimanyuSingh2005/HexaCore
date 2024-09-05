@@ -13,4 +13,12 @@ router.get('/', (req, res) => {
     res.render('index');
 });
 
+router.get('/schemes', (req, res) => {
+    res.render('schemes');
+});
+
+router.get('/patents', (req, res) => {
+    res.render('patent');
+});
+
 module.exports = router;

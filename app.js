@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 require("./db/conn");
+
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
