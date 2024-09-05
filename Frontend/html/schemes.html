@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gujarat Tech | Schemes</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../css/schemes_style.css">
 </head>
 
@@ -16,41 +18,46 @@
                 <img src="../assets/logo.jpg" alt="">
             </li>
             <li>
-                <img src="../assets/logo2.jpg" alt="" srcset="" height="50px">
+                <img src="../assets/logo2.jpg" alt="" height="50px">
             </li>
             <li class="input">
-                <input type="text" placeholder="Search">
-                <div><img src="https://aryansrivastava07.github.io/landing-page/assets/search.png" height="10px"></div>
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <button class="search-btn">
+                        <img src="https://aryansrivastava07.github.io/landing-page/assets/search.png" height="15px">
+                    </button>
+                </div>
             </li>
             <li class="login">
-                <a href="login.html">
-                    <h3>Login</h3>
-                </a>
-                <a href="signup.html">
-                    <h3>Sign-up</h3>
-                </a>
+                <button class="nav-btn">
+                    <a href="login.html">Login</a>
+                </button>
+                <button class="nav-btn">
+                    <a href="signup.html">Sign-up</a>
+                </button>
             </li>
-        </ul>
-        <ul class="nav_option">
-            <a href="index.html">
-                <li>Home</li>
-            </a>
-            <a href="index.html #about">
-                <li>About</li>
-            </a>
-            <a href="">
-                <li class="active">Schemes</li>
-            </a>
-            <a href="Patent.html">
-                <li>Patents</li>
-            </a>
-            <a href="user_dashboard.html">
-                <li>Dashboard</li>
-            </a>
-            <a href="chatbot.html">
-                <li>Support</li>
-            </a>
-        </ul>
+            </ul>
+            <ul class="nav_option">
+                <button class="nav-btn">
+                    <a href="index.html">Home</a>
+                </button>
+                <button class="nav-btn">
+                    <a href="index.html#about">About</a>
+                </button>
+                <button class="nav-btn active">
+                    <a href="">Schemes</a>
+                </button>
+                <button class="nav-btn">
+                    <a href="Patent.html">Patents</a>
+                </button>
+                <button class="nav-btn">
+                    <a href="user_dashboard.html">Dashboard</a>
+                </button>
+                <button class="nav-btn">
+                    <a href="chatbot.html">Support</a>
+                </button>
+            </ul>
+
     </nav>
     <section>
         <h2>Schemes</h2>
@@ -62,93 +69,49 @@
                 <p>Startup India Seed Fund Scheme (SISFS) is an initiative of the Government of India to provide
                     financial assistance to startups for proof of concept, prototype development, product trials, market
                     entry, and commercialization.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, neque dolorum. Natus, delectus
-                    voluptas facere molestias vero et totam provident nisi suscipit quisquam voluptates vitae
-                    accusantium. Repellendus voluptatem atque nam!</p>
+                   </p>
                 <button>Know more</button>
             </div>
             <div class="aos">
-                <img src="https://api.startupindia.gov.in/sih/api/file/user/image/Startup?fileName=c70e9edf-86cf-4ef5-b535-fa35407a17e5.png"
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNb6vcofJieaWGUvhotpEXIAAWwROQ4K1jzEobZrfDVlVnAa0Cl5x93iQrpn4dsxokO3s&usqp=CAU"
                     alt="">
-                <h3>Startup India Seed Fund Scheme</h3>
-                <p>Startup India Seed Fund Scheme (SISFS) is an initiative of the Government of India to provide
-                    financial assistance to startups for proof of concept, prototype development, product trials, market
-                    entry, and commercialization.</p>
+                <h3>Gujarat State Biotechnology Mission</h3>
+                <p>The State Government of Gujarat, in its resolve and continued endeavors for socio-economic up-liftment of society, has identified Biotechnology as most potential tool for development. The State intends to promote biotechnology sector by building appropriate image, encouraging entrepreneurship, strengthening organizational colorations and forecasting business partnerships.</p>
                 <button>Know more</button>
             </div>
             <div class="aos">
-                <img src="https://api.startupindia.gov.in/sih/api/file/user/image/Startup?fileName=c70e9edf-86cf-4ef5-b535-fa35407a17e5.png"
+                <img src="data:image/jpeg;base64,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"
                     alt="">
-                <h3>Startup India Seed Fund Scheme</h3>
-                <p>Startup India Seed Fund Scheme (SISFS) is an initiative of the Government of India to provide
-                    financial assistance to startups for proof of concept, prototype development, product trials, market
-                    entry, and commercialization.</p>
+                <h3>Scheme for assistance for Startups/ Innovation – Gujarat Industrial Policy</h3>
+                <p>The key objective of the Gujarat Industrial policy 2020 is to encourage R&D, start innovation and entrepreneurship. Hence, the new scheme is being introduced in order to support startups and innovation at different levels of a startup cycle.</p>
                 <button>Know more</button>
             </div>
             <div class="aos">
-                <img src="https://api.startupindia.gov.in/sih/api/file/user/image/Startup?fileName=c70e9edf-86cf-4ef5-b535-fa35407a17e5.png"
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEBASEhIVEBUQFhgQERAQFxcWFhEVFRgWGBcXFxUYHSggGR0lGxUVITIiJSkrLi4uFx8zODMsNygtLisBCgoKDg0OFhAQGi8iHh01NzAtNzcvKyszLSsrKzcvLSstKy0tLSstLS0tKysrLS0rKy0rLS0tLS0rKy8xLSstK//AABEIAMgAyAMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABAUDBgcBAgj/xABDEAACAgECAwQGBwUGBQUAAAABAgADEQQSBSExBhNBUQciMlKBkRRCYXGSocEVI1Ni0RZDcrHh8DOCorLSJFRVg5P/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAQQFAgMG/8QAIxEBAAIBBAMBAQADAAAAAAAAAAECAwQREjEhQVETgQVhwf/aAAwDAQACEQMRAD8A7jERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERARPCZh09wYTiclYtFfcjPEROwiIgIiICIiAiIgIiICIiAiIgIiICIiAieZnsDyezUfSTrzTpa3Bxm1R/0tKbs/2m1jKCtdlydM7GYfiAnvTBNqcol4XzcLbTDoj9DKrS37bFHg3L+k++HcTa3k1NlR82U4+eJW68kDl4TD/wAlacWXHb4sY7RaszDZ4kXhupFlat58j946yVNOtotETHtBEROgiIgIkXiWvroqsusbalYLMfs/qZxXifa3iXFLzTpA6IfZqqODt87Hgdzns4ePRpxcDeLE3ddvfNu+eMS+9H2p4ymsOl1IY1ou6w389o5he7s8cmB1KIiAiJrPpF1LV8M1TqxVtqhWXkQS6iBs0ThPox7T216+tLbXdLx3XrsSAx5oRn7eU7tARPz1247U3X669qrnWtT3dYRiBtTlnAPicmdv7K6g2aHSOTktUhJPicDMC2iIgaB24TU6a9dZS7bWwli5yqkYxlfI/wCctezPbGnU4R8VW+6Tyb/Cf0mw6/SJdW9bjcrgqROJ8c4W+lvepvDmje8vgZVyzbHblHUtzRY8OtxflfxevU/6bx6X6Gs0enrQZazUoigeJK2ATbeB8OXT6emhelSBM+Z8T8yTOb8B7Wc6a9WnfrW4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"
                     alt="">
-                <h3>Startup India Seed Fund Scheme</h3>
-                <p>Startup India Seed Fund Scheme (SISFS) is an initiative of the Government of India to provide
-                    financial assistance to startups for proof of concept, prototype development, product trials, market
-                    entry, and commercialization.</p>
+                <h3>Government e Marketplace</h3>
+                <p>The main advantage of GeM is online access to all the government departments all over India. New features like custom bids and BOQs are a real boon. Dashboards are seller-friendly for monitoring the supplies and payment. Grievance redressal through the incident management process is great. We look forward to doing more business on GeM.</p>
                 <button>Know more</button>
             </div>
             <div class="aos">
-                <img src="https://api.startupindia.gov.in/sih/api/file/user/image/Startup?fileName=c70e9edf-86cf-4ef5-b535-fa35407a17e5.png"
-                    alt="">
-                <h3>Startup India Seed Fund Scheme</h3>
-                <p>Startup India Seed Fund Scheme (SISFS) is an initiative of the Government of India to provide
-                    financial assistance to startups for proof of concept, prototype development, product trials, market
-                    entry, and commercialization.</p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPMAAADQCAMAAADlEKeVAAAA1VBMVEX////S09X+/v4AqFn1hjQAp1bb3N3u7u/P0NLU1NYAp1TR1Nf1hTG3zcUUq2H7+/v2ginis5b0iTnWysPT0c/xkU/09PTrnm7bwbGry704unrZxbqexbHh4uOxy788tnfA49DP7t/mqoTa1dtwvJT9692Jwqbo6Omm3cH4rX/++vYApU1Nt3ojq2TG0s/3gSL3nmLeuqXopHjispTzjEHlrImUw6q/z8phuYxQtYHtmmL+8en6zbF1vZhZtoWgxbDW5d/t5uKBwJ/v1sfd8+mT07D/9P0l7/iAAAATyklEQVR4nOVdCXvaOBrGpj5kA6ZN6oQNhk6dxTPLkXaacmQ3mdlsd///T1qdPiVbluUkZd5npiFAwK+/U5+kT4PBiyFMoihxgpf7wldHaBuugf6zU9pBEJKHZmDSp0znjO6KY6RwgZ04YehEtmEAO4oi24Y/EFPTsV3XBY7Z+HE/A0KjABeh+IztOInt0sfJOcjaNhqRvwlQ2NHPTjsAzZzLt8D+yTVcgbNhRK991d0QKFA2DOe1L7sTlORsuOFrX3cXqHE2jJ+atITf5gH8LKRZdpWH08yPjygMYPby1pOzBCZaHNJuMz8uSPbivmWHFqBcyuWEGUWLzrjnSQeRrV/rzSRR+juHUivlE0HSlbKRd2joxnJ0qSNgrp+g8Q4CHAzYyKICsy4zMuGbHbt6fegSI6Cq2XmkDi3EX2NrpuxgBXXQ7QQkD0ZWBSB3gTtB9wUYKTM3ryWJoYMxIo0GXEEY0V81azeRF/dS8WCv9PagIkeQvhZqkTH77txQhOc0OsBsuEy36EHCqrGmKVTI+XNN0Ms5aBZNTnk5lFNr65Gyq+ZlRQibObs2M2t+ukGuqDkVgT7CRq5AAXodt1QCAX1cMAgcW/Be107rHoI3gMgJWSQIQvjmVoav2ZxlkybXEPg5+nLdazCpRN9kMgxINawFac3xWTlRlAaq/JhltGKtOzwnPXNG2UWFMWGdyH6G7ipK1PyV9fAJ+C+6kclnjFkHkqLW67UHpuJoN2N88/7q4eHz1wsebejRc0acFfTT5yIp0jp02yTJdQihPNillL9+HE2nI/j/h98vKqQzygMT1fVRmAI2igHp81Km1W2MgXJlEiUh8GV1Ynx5NR29IxhN77+WSUeDzGHBK4+SxEmSCKDqAFN5OdvqMqBWq0mKKX+ZvsswuntfJG0zYYa2a+eGK2ECUEZLX5UxLlDDqQkdjbeMhzxliLuipIMB0188NMzHZzgaoXovVTPskHvqzYj9b1Oq1Xd3RMVH9zmbTo054jhvGKjQ5AXRAhn7UrZovfnH5T0mOv34/ub68wfy+HPG2Q6oweacd561A2+FvEkrh2ge50g6MyjB/zqlNC+vb/wbfANG9+nLrjOg1MrxKiNNXpEZ2hVLZB04k0TYVOV8hTiPHvz3d3d3H41rot3XTNCA8oHBlRGG8cpxMsuGdk7vi5SbUSwCFzhDV4pvvJQ58ThjdZ7e3NyhH1f+A/41dd1UhpERpM7bIGWniLnsgQ0CInGpL4R/G7Wfv8x/ts3GdrlqXjvOWMz3l9+xio8M/DMzaOy0oddk+ps32oTdBoMIWnq6RyE5yfx2rszFLX3IcL4jnD8Tsy5xtqmYQcCcd+5PU+9lgxbK3Y1zVvjoEL+obl9cY91+8K/wr98IZ2qpARNzKcV0I+bgiDrIDu4UOJvpN3anbFADviI+7PIGx+opy0qwzUJjoipe5uSS1wOi3NJBVCXxJjqE9ToIE0d94hRxfk8M+bt/+fXav/iIY9WHS3pxVHdtUQSOqCEn1OwloVDnDmF8wrXbMAJ4dq1LMnpB85CHrxc33+nj3/08pQGNwJwATHNxO+qd8wALlw5bQ9nhqwD+90ru+YHmni4VH1VhjupSj2IjM+uZMwGiCh1quzocB1/KYwwWnSnXhARnbnLp4jVywHbCMJAf7ylzNvHYvfvsITTi4ljye5ptE9cVEQ1udhrS16IuZ11DSv/iS1ozeDcdfUsp06hMrVXjqF29eKCt1ukb3+5RaWg0mo4ernNjKuKhmFfWN5xTX3QiM5CRBAxUv3+8//jw/SZfA6SRyG0XfWWgXj3QWdT2OcVexjlslWVJQXkhWYdURArFUNW5hF6AcuG339mLNDyLQ1UHqAra7FXQJc4qYQJQcF5SFnRHv+LzQV+lnB2XZt2V1Rh8pK/GMTiMZ7PZ4mDAh2XibhKoibqboC9vuLigEwY289d0EG2XsOBijFMlSHd2u9xOhgiT7fK4H/tx6WKB4sxGF4v2b0pJJ03EfisUOBnnCn4QQiVYS0gF7PanredZFnvS8rzh5vFQydSUODetnVHgPJXjPPgxsbic43j3OFl71Vc862lR1HCgtrC/gzftzJkr541/CyXMe2k49NanRV7DFf1Yh0mNXjhD462KOMfauvVT0srVbvWRBuQ86sSZL83sWQ9a8WQyQT9zTy4XKWnVGK0erpCcPyCQf9EDPmceZaGcM4lOTqvZYjweL2b7p+0wpe0N9zG5AOWhRtclBnng6brplWCFReWelbDPlNryhrcz6Mxm+9VqtZ8f4nj8vF1b7MVHStqIFFe2qwv64nMB3y8J59+cAiLX4eLPx9sCDvOUszd5jv35ceIxDDf7XTzbMNbeLfNkaEJEYeOhsqD967tpHqOL94Rz+Z7yv/fH0Ctgxjhbw8fd7hHG57yme5Pj2N8z/+Y95oKWq6DjqgWMst/+kHJW8tuMs7ed+atJNVx5w+Nud2KkmU1jqExsqGl3P5y9jX9Yrrku3RvO4+c11YVFLk6rrIpUC9K9cPaO8T4nY8vLpaDD4foYzynpiZ8nnc41tiCtsszcv7kbUZQ4UxQ5l78T2rNFkOPsHY2Vl/GdLE9PT5utlQWqE9iTx9CPFa4GtN5OLLsWr8j5geJLkXNIEeQ5D8IS/jxtCJYZZ6jYjLLlbW9nhx0cYfmHxfOS3RnvFD9Tu1+UR5eV3QRNUFhcgYJqlES+fzHKcR5dkQ3ebjp+pjOtbgkxxWHCOFtDf864TZ53dNAM/43BbMm81y0gjsw7VYZZrZNRBVEnJEg4N2Rm7p//wpPRLCdxi+NnUUgE45SzNz/Q1HP9tCsMlyHtFXtp72/xo/WsMvpvP+hw2ll1FiH+rofz+imm0vSeq/WgeEyiszU5ED8GbbvyJoVI3WpkmX2+Js7Dw5465RWvBAYORL4evDVE5GWLVhtpOfLFopwe6eG8P1KlLWRZhXdS772YEYt+jMtvsZ32QWtgyk7M5qcSKOd/Ux+mypmK2duIZuviFfVeMb451paz5clVWectu645Fw3/XvTbipx3/oaI+SBUNuayd3QMVvVihtrETijjwAuWo4dzvCD+6yi2LzAjd2VF/sZbVZQboz3n5i0SrlEM/5o4E821Kp4p917/ZBGPjVUCejPu5SnVEgLhLk+UTNhJ6UM1ccaKa235siOg92UIbuveqzpr6URV2i6IEs42fk2cAXZM3nMdZ7DDnNdjMghb89+r3twFbYMGrEsQ/GFHojighzPJQb0/6sIlIOHM2x8I5x33zZ1afphB6CQR2QHOE7BWzoshP9EovNnABuA970geKnjzCzS00cN5hn9MxrVpEThizo+7iSDlJui/6YUmzjgObRs43+Y5ewLOureTlmDD0frNm5Nzr4JGk3y+Hs7UnoU08JtJrpbas+gGad4eXkSijzP12/Nazi7x2/PxusZvG932YjUAJ+eaOJOBQ7nOVXrzgXA97OviM/ry3pSbjEd0cSZ52KQ2DyPFsEl8bMjZlOcs5Shr40xkV6fcwF+SPJv+PIo592TQbAJEF2c6WDqJOce07r8n1QNvL35rT9GKsdDEeUdyLBiARNKjYh56Pq33inO2nuScTvlo4rwfz7CDsrYibxzfEjHfxni+3lqKTb+nLntpwVAT5/kR0EJJtXJNKLMZauq164Zguhs+EGQ7snRxHlJBo1IJr+45J4yhmEmtsCZl0993C48zsy/QxXl9ip9ofbtaugbxnhT1oerTUuCTiHJ+51gjE5mxtulko2oBZ0q6/TwGm6JAk9BxnjaId09s8mZ2oA9EYm41WSezQCM/2XFBcHld5Hx5SZ7/d1vO1vAwpquJLOs0AzFdAoqWkwwp5fXe2HjUAPgybuW9cN+0mjlNtJG3oNL3Hwnu8/OS7z6wZ6/+MWjHGXpif84WS6HVjrPDYbc7jFenCZughcZ8pI953t0F7WZkWewR2H8YRUGhDCyYf4aSJph+ac0ZGrI/y5Z5euvhdrtFS2mGGeVbNqXFcdp223VEbAERP4NJ8h3bKGfuOoMUIwXOiPQ4FSrW8dwyC8tbxY/UtW84rr197kXlXMnOcecWzpROL5yh9zr4R+6CT8tbjn3qyawtZ7JDIfeii7nTDIYshwhs0Ur5EueRHs7QnPdgvqywtrztczrzbg15+anKWIou5qZd/km1s6ZNJ7Tn6SjD9N3Ft7tR/gk1zpDd08GfL4eFpTTW9nlnPDLnzR97qXAmG66InEljx3IP/CIuv14XYFwUnvj6H7NlrEo9lXXcxePV0lqv1x78f718hOF6xezcWgvGUypLIYmgQRI6UqtLLq/rocwZrdTe7A9xvFvM5/MZejB/Shf3omVigs9S6MrPLFqGcCFWcaGq20ydJ8vjarZYLGb743JiZUqwrK36ty4KteqpJViz3t2HZbS9NVkLmn/uKKz7EbRW7zbbv/vhvD2JdiZgIU/25e03RfC6YjegzXZCvZytxSdc1tvE8y1/uSdS92e/rkKIeuooDCJbrHfVa8/WL4TzMgbu/lRY5ckUfbnya/eoA5Wl3Ajyq7mzMYYAv6lw3pgwatjjx82ELW9Fu6u84fI42zWotXJ5t412X9YjaTOWpJy9DbuQH5/+e1puJ5PJdnm6nS/8uKkPQYeStraWau3qJBXOEGg1KMBrQvnZb+n7OpQ6dW1I78655Ya3LiXtTv1KMlDOCV2/rcC55U6RLmcEadp+xPb0k65RgTznMKILk9ru2u1S7NTT3cFl7UkIZ+GsaZlzgIY2thO2W3FrdK3ja/FjbH+7Tba7S3OmSX+75tz4T7rNRerodEC6SjU2UCpzVv/qrnNUGvwYa7nDwrTgQgEp76Y5SYfdyV3nIhtJNzoY1hSMuW/ee1Bt9keRcwcH2nn+tYGTTVbMATuJ8meD5Oiw8ExdWfl1XGZDFljgDHW7pllF35wb7AppLuqz5+B9VJyhCW1XEdEGh5X5p90fEJ8gfi2OMT79QdGacvc554bEu2itHM6056NNO/CUXwYLVBLAGOY4Dy1aJlhPGmoDHM7d55zrSdNGvHYiir5OwZwrbhssinsHGef0d+HMuxgaJmBrozRrDkb7G1YsgYo5MQR9LPVz1rPgsW60UWx8Z1a6u4TUjCO+OfchZz1Hctb4MeqWA9ZhuKTdaT9m2sKz8kFgMbTy8H75tC783taeW8yz16MmWFIBUuVGRz5k9wM4dC+sUPVh+rUs4pdPfyv8vmnFWePJbTV+jHZTDl3Gb+DQbaBoDtikYnaEA0kQi7/2f7hOIE1YZXd/DcR+jCl15KZdpQd4w296BgQcIaUdeauUx8u/CdFKzq5q6U8IsR+jY4jABlSshHb2GGp7IBZzyZ7L8KR9WA8r/sR+jAo6BDnSGRBl6rx50yNlv12GtN/uZTWr2I+lKkwz0BJlZszcuos+zn2s+BM2VqP9s82BaZPVOhlhdAoEoHbO1xR9nHtZ2Sn0YzmXDdAZJ9kZZHAUxY7DEEyNQHvONWRZ59A23+5nmaN4utJJXTTqx29HCQQaW4LsiABBuAO7VYZf82BP+pKce9qG0OTHsKzRmUX4GsgGw2qqUrpUwJo4xKDgesMIPmVHkXR7/X44V5s2MqR+yizEyLzzloDLC7Cycwv96HZdg8j6M8gkj2PgLg6QnSLtbVtRzcXb3c+a43KWPQuxv3Oi664gO3yrwFi+gzvXJCULoP3tKqqvj8GUF70lb9ltetZzR/vSU4Wak+0Car2RC2mz3cJm6zNCOaKSLu33tPOCUmluiA/IIXfSy63oVXO8UIsJ4Si9046TJCoNSmqgeiZOE2WeZreYwXHR4Ymkyo6gr2CC0csJqy532rjNV4HiXgnNTq2HJuWCaqXquWk9jDk0N0s3RCN+tRaF+AR67S5N9Qg3IfiJY/tO//hAFRg5+gjWurWbL5XWM8F2XVuNrtB81gJfs1t/SZ8hetB+XUstBLlyS2vuMeMm0LSQil6tYFtTu+/oY3NkAVqVW7SVy0AWKhsjeu1RQUnr5MzPE00bz0zIfkr/TWc0niQinD0NyTlqch/SswMjkKv3NCNquFqpuPgCmq2NtESnWZndIS9FWYcjkzn0tXk1olKTR1V0c2Su3Cblxi+xdU9I1qPLilDprtFNS9RelPFAvYDgAnl1rHcbvadfVSiQRoOfNlsaGzi/QFwuo13zatIjs502NgRolb1UndEi9wblnqAyaArQ0E70VvxkIBVBAYAqrSSS5qJYuaPsS6D58AGQBKHqeF5qfPUyuWceDb2rVc6bzyAVEHvu8ci/sBpRd/QycuneK3AemAmftdvZr0pxfrmMu3htCW+lvgbnIjOWeYXUhMAME7SKhGwowDMoWoKnzAj6leRcAJoqCzX5UqkZnNew5x4hFawUT1x8q5BzYi8eoHuF3G7V81JuOc6917dfFJK7ks+Ks1wi9hoD6f4gx/m8dFuqqPwag4weIWXPfa33fCXwOFc27J2VZnM5g7BYMTo3yjzOUcGxtelS+5OAUygB+We7lWHeJHglRnTiLnTneL9e08TmTwjufBVt0YgGrGen1gPRHN15ReMKuJzPLByXwc1IzlzOvHLYmVUIKuBx7vEgmzcB3oLm16rsvhR4cj7HAJUD7/Da8/ba3JZpb6GA3x/4h1G/2kTNS4DNYMCkOvqLyJn1cMGrCPIzOGdsz7QuQEfHf43wjLPOdHSc63BzvnLG9ZGsnplWg87ZnNEqrBy/gAn5rBOSEBTWQOGFOi+/KuqFYRZEGgDX7XtD0ZtDkHRaq/F/GHYHP9FLwiEAAAAASUVORK5CYII=" alt="">
+                <h3>Investor Facilitation Portal</h3>
+                <p>A comprehensive list of Pre-Establishment as well as Pre-Operation approvals required for setting up a business. Under Know Your Approvals section, an investor can view a customized list of approvals required for setting up a business in Gujarat State. A Company/ entrepreneur can create/ add multiple projects under a single login ID.</p>
                 <button>Know more</button>
             </div>
             <div class="aos">
-                <img src="https://api.startupindia.gov.in/sih/api/file/user/image/Startup?fileName=c70e9edf-86cf-4ef5-b535-fa35407a17e5.png"
+                <img src="https://lh3.googleusercontent.com/proxy/1Vw3iyNK7EqOWJs4s-yYOQ-2-hnPSI53sohSUvGLtSBiG47l4RoqvQmDzDMH72Xaf7ehBbnh3fEGT9UxuYQwB4DynLvRggBaew"
                     alt="">
-                <h3>Startup India Seed Fund Scheme</h3>
-                <p>Startup India Seed Fund Scheme (SISFS) is an initiative of the Government of India to provide
-                    financial assistance to startups for proof of concept, prototype development, product trials, market
-                    entry, and commercialization.</p>
+                <h3>Student Start-up and Innovation Policy</h3>
+                <p>The Education Department of the State launched a unique policy for students known as Student Start-up and Innovation Policy (2017-2021) for a large pool of students across Universities and Institutes to develop and nurture their potential for innovation and entrepreneurship. This Policy was built on a student-centric perspective to support student innovators and involve different stakeholders.</p>
                 <button>Know more</button>
             </div>
             <div class="aos">
-                <img src="https://api.startupindia.gov.in/sih/api/file/user/image/Startup?fileName=c70e9edf-86cf-4ef5-b535-fa35407a17e5.png"
-                    alt="">
-                <h3>Startup India Seed Fund Scheme</h3>
-                <p>Startup India Seed Fund Scheme (SISFS) is an initiative of the Government of India to provide
-                    financial assistance to startups for proof of concept, prototype development, product trials, market
-                    entry, and commercialization.</p>
+                <img src="https://i.ytimg.com/vi/rAoGzNKkm-k/maxresdefault.jpg" alt="">
+                <h3>Startups related to Science, Technology and Innovation Policy of Gujarat</h3>
+                <p>The Science, Technology, and Innovation for antatvogatva (up to the last citizen) is the need of the hour. The regional demands sometimes do not have solutions in the global Innovations and hence one cannot blindly adopt the global innovations.</p>
                 <button>Know more</button>
             </div>
-            <div class="aos">
-                <img src="https://api.startupindia.gov.in/sih/api/file/user/image/Startup?fileName=c70e9edf-86cf-4ef5-b535-fa35407a17e5.png"
-                    alt="">
-                <h3>Startup India Seed Fund Scheme</h3>
-                <p>Startup India Seed Fund Scheme (SISFS) is an initiative of the Government of India to provide
-                    financial assistance to startups for proof of concept, prototype development, product trials, market
-                    entry, and commercialization.</p>
-                <button>Know more</button>
-            </div>
-            <div class="aos">
-                <img src="https://api.startupindia.gov.in/sih/api/file/user/image/Startup?fileName=c70e9edf-86cf-4ef5-b535-fa35407a17e5.png"
-                    alt="">
-                <h3>Startup India Seed Fund Scheme</h3>
-                <p>Startup India Seed Fund Scheme (SISFS) is an initiative of the Government of India to provide
-                    financial assistance to startups for proof of concept, prototype development, product trials, market
-                    entry, and commercialization.</p>
-                <button>Know more</button>
-            </div>
-            <div class="aos">
-                <img src="https://api.startupindia.gov.in/sih/api/file/user/image/Startup?fileName=c70e9edf-86cf-4ef5-b535-fa35407a17e5.png"
-                    alt="">
-                <h3>Startup India Seed Fund Scheme</h3>
-                <p>Startup India Seed Fund Scheme (SISFS) is an initiative of the Government of India to provide
-                    financial assistance to startups for proof of concept, prototype development, product trials, market
-                    entry, and commercialization.</p>
-                <button>Know more</button>
-            </div>
-
         </div>
     </section>
     <footer>
