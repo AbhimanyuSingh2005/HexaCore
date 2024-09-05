@@ -115,3 +115,24 @@ if (isLoggedIn()) {
 } else {
   console.log('User is not logged in');
 }
+
+
+
+// //
+// fetch('http://example:300/signin', {
+//   method: 'POST',
+//   headers: {
+//     'Content-Type': 'application/json'
+//   },
+//   body: JSON.stringify({ email: 'user@example.com', password: 'password123' })
+// })
+// .then(response => response.json())
+// .then(data => {
+//   if (data.token) {
+//     // yah pe token store ho rha h localStorage me
+//     localStorage.setItem('token', data.token);
+//   } else {
+//     console.error('Sign-in failed:', data.error);
+//   }
+// });
+
