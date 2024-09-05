@@ -16,23 +16,40 @@
         box-shadow: 0px 0px 5px var(--menu_color);
 
         & img {
-            align-self: start;
-            display: block;
+            box-shadow: inset 0px 0px 5px var(--menu_color);
+            outline: 1px solid rgb(255, 155, 105);
+            padding: .3em;
+            border-radius: 5px;
             object-fit: contain;
             width: 70%;
+        }
+
+        & h3 {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         & p {
             grid-column-start: 1;
             grid-column-end: 3;
-            text-overflow: ellipsis;
-            height: 4lh;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            line-clamp: 4;
             overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        & a {
+            grid-column-start: 1;
+            grid-column-end: 3;
         }
 
         & button {
-            grid-column-start: 1;
-            grid-column-end: 3;
             border: none;
             border-radius: 5px;
             color: white;

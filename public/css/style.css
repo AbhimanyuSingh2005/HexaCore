@@ -11,6 +11,8 @@
 body {
     font-size: 1rem;
     background: var(--menu_color);
+    position: relative;
+    min-height: 100vh;
 }
 
 h2 {
@@ -374,11 +376,17 @@ section {
 
 footer {
     /* height: 30vh; */
+    width: 100%;
     padding: 5vh;
+    margin-top: 5vh;
     background: black;
     color: white;
     text-align: center;
     vertical-align: bottom;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    /* bottom */
 }
 
 button,

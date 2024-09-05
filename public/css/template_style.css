@@ -1,7 +1,7 @@
 .template_container {
     display: flex;
     gap: 2em;
-    padding: 1em 3em;
+    padding: 1em 3em 3em;
     flex-wrap: wrap;
     justify-content: space-between;
 
@@ -14,15 +14,26 @@
         gap: 1em;
         box-shadow: 0px 0px 5px var(--menu_color);
 
-        &h3 {
+        & h3 {
+            display: -webkit-box;
             text-align: center;
+            text-wrap: balance;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-bottom: 1em;
+            border-bottom: 1px solid var(--menu_color);
         }
 
         & p {
-            text-overflow: ellipsis;
-            height: 4lh;
-            text-wrap: stable;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+            line-clamp: 5;
             overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         & button {

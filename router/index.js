@@ -17,16 +17,19 @@ router.get('/schemes', (req, res) => {
     res.render('schemes');
 });
 
-router.get('/patents', (req, res) => {
+router.get('/patent', (req, res) => {
     res.render('patent');
 });
 router.get('/login', (req, res) => {
     res.render('login');
 });
-router.get('/signup',(req,res)=>{
-    res.render('signup'); 
+router.get('/signup', (req, res) => {
+    res.render('signup');
 });
-router.get('chatbot',(req,res)=>{
+router.get('/chatbot', (req, res) => {
     res.render('chatbot');
+});
+router.get('/user_dashboard', (req, res) => {
+    res.render('user_dashboard');
 });
 module.exports = router;
