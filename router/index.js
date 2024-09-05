@@ -20,5 +20,13 @@ router.get('/schemes', (req, res) => {
 router.get('/patents', (req, res) => {
     res.render('patent');
 });
-
+router.get('/login', (req, res) => {
+    res.render('login');
+});
+router.get('/signup',(req,res)=>{
+    res.render('signup'); 
+});
+router.get('chatbot',(req,res)=>{
+    res.render('chatbot');
+});
 module.exports = router;
