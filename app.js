@@ -6,6 +6,11 @@ const app = express();
 
 require("./db/conn");
 
+app.use(express.static('public'));
+
+const indexRouter =require("./router/index");
+app.use(indexRouter);
+
 app.get('/', (req, res) => {
     res.send('Hello World');
 });
