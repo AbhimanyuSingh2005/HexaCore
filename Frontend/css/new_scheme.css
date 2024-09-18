@@ -1,5 +1,5 @@
 /* Apply flexbox for scheme container */
-.scheme_container {
+.template_container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: space-around;
@@ -8,15 +8,21 @@
 }
 
 /* Styling each scheme (card) */
-.scheme_container .aos {
+.template_container .aos {
   display: grid;
   place-items: center;
-  grid-template-rows: 1fr 5% 25% auto;
-  gap: 2em;
+  grid-template-rows: auto auto auto;
   padding: 20px;
   box-shadow: 0px 0px 5px var(--menu_color);
   border-radius: 10px;
   transition: transform 0.3s ease;
+  & .patent_id {
+    place-self: start;
+  }
+  & h3 {
+    /* font-size: 1.5em; */
+    margin: 0.5em 0;
+  }
   & p {
     display: -webkit-box;
     -webkit-line-clamp: 5; /* Number of lines */
@@ -24,11 +30,12 @@
     line-clamp: 5;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-bottom: 1em;
   }
 }
 
 /* Ensure images have the same size */
-.scheme_container .aos img {
+.template_container .aos img {
   display: block;
   width: 30%;
   height: 100%;
@@ -37,12 +44,12 @@
 }
 
 /* Scheme card hover effect */
-.scheme_container .aos:hover {
+.template_container .aos:hover {
   transform: translateY(-10px);
 }
 
 /* Styling buttons */
-.scheme_container .aos button {
+.template_container .aos button {
   padding: 10px 20px;
   background-color: var(--menu_color);
   box-shadow: 0px 0px 5px var(--menu_color);

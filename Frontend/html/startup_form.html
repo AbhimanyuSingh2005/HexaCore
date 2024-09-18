@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/ipr_form.css" />
+    <title>IPR Form</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav_menu">
+        <li>
+          <img src="../assets/logo.jpg" alt="" height="50px" />
+        </li>
+        <li class="input">
+          <input type="text" placeholder="Search" />
+          <div>
+            <img
+              src="https://aryansrivastava07.github.io/landing-page/assets/search.png"
+              height="10px"
+              alt="something"
+            />
+          </div>
+        </li>
+        <!-- <li class="login">
+            <a href="login.html">
+              <h3>Login</h3>
+            </a>
+            <a href="signup.html">
+              <h3>Sign-up</h3>
+            </a>
+          </li> -->
+        <li class="nav_profile">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/10337/10337609.png"
+            alt="Profile"
+          />
+          <div>
+            <a href="user_dashboard.html"><div>Dashboard</div></a>
+            <a href="login.html"><div>Log-out</div></a>
+          </div>
+        </li>
+      </ul>
+      <ul class="nav_option">
+        <a href="index.html">
+          <li>Home</li>
+        </a>
+        <a href="#about">
+          <li>About</li>
+        </a>
+        <a href="schemes.html">
+          <li>Schemes</li>
+        </a>
+        <a href="Patent.html">
+          <li>Patents</li>
+        </a>
+        <a href="chatbot.html">
+          <li>Support</li>
+        </a>
+      </ul>
+    </nav>
+    <section>
+      <h2>Register your Startup</h2>
+      <form action="" method="post">
+        <div class="form_body">
+          <div class="form_group">
+            <label for="title">Title</label>
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="form_group">
+            <label for="website">Website (Optional)</label>
+            <input type="url" name="name" id="website" placeholder="" />
+          </div>
+          <div class="form_group">
+            <label for="number">Mobile Number ( country code)</label>
+            <input
+              pattern="[+]{1}[0-9]{12}"
+              type="text"
+              name="name"
+              id="number"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="form_group">
+            <label for="Industry">Industry 1</label>
+            <input
+              type="text"
+              name="name"
+              id="Industry"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="form_group">
+            <label for="Industry">Industry 2 (Optional)</label>
+            <input type="text" name="name" id="Industry" placeholder="" />
+          </div>
+          <div class="form_group">
+            <label for="Stage">Stage</label>
+            <input type="text" name="name" id="Stage" placeholder="" required />
+          </div>
+          <div class="form_group">
+            <label for="Evaluation">Evaluation</label>
+            <input
+              type="text"
+              name="name"
+              id="Evaluation"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="form_group">
+            <label for="Description">Short Description</label>
+            <textarea
+              name="Description"
+              id="Description"
+              rows="2"
+              placeholder=""
+            ></textarea>
+          </div>
+          <div class="form_group file_inp">
+            <label for="file">Upload Documents</label>
+            <input type="file" name="file" id="file" placeholder=" " required />
+          </div>
+
+          <div class="form_btn">
+            <button type="reset">Clear</button>
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+        <div class="form_ilus">
+          <img
+            src="https://img.freepik.com/free-vector/startup-life-concept-illustration_114360-1226.jpg"
+            alt=""
+          />
+        </div>
+      </form>
+    </section>
+    <footer>
+      <b>@2024 - Team HexaCore</b>
+    </footer>
+  </body>
+</html>

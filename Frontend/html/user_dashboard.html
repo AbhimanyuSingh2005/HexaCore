@@ -1,111 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Dashboard</title>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-
-        .navbar {
-            background-color: #e58e08;
-            padding: 15px;
-            text-align: center;
-            color: white;
-        }
-
-        .sidebar {
-            width: 250px;
-            position: fixed;
-            height: 100%;
-            background-color: #7e7d7c;
-            padding-top: 20px;
-        }
-
-        .sidebar a {
-            padding: 15px;
-            text-decoration: none;
-            font-size: 18px;
-            color: white;
-            display: block;
-        }
-
-        .sidebar a:hover {
-            background-color: #e58e08;
-        }
-
-        .main-content {
-            margin-left: 260px;
-            padding: 20px;
-        }
-
-        h1 {
-            color: #e58e08;
-        }
-
-        .card {
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .card h2 {
-            color: #343a40;
-        }
-    </style>
-</head>
-
-<body>
-
-    <!-- Navbar -->
-    <div class="navbar">
-        Welcome to GujaratTech !
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav_menu">
+        <li>
+          <img src="../assets/logo.jpg" alt="" height="50px" />
+        </li>
+        <li class="input">
+          <input type="text" placeholder="Search" />
+          <div>
+            <img
+              src="https://aryansrivastava07.github.io/landing-page/assets/search.png"
+              height="100px"
+            />
+          </div>
+        </li>
+        <!-- <li class="login">
+            <a href="login.html">
+              <h3>Login</h3>
+            </a>
+            <a href="signup.html">
+              <h3>Sign-up</h3>
+            </a>
+          </li> -->
+        <li class="nav_profile">
+          <img src="../assets/profile.png" alt="Profile" />
+          <div>
+            <a href="user_dashboard.html"><div>Dashboard</div></a>
+            <a href="login1.html"><div>Log-out</div></a>
+          </div>
+        </li>
+      </ul>
+      <ul class="nav_option">
+        <a href="index.html">
+          <li>Home</li>
+        </a>
+        <a href="index.html">
+          <li>About</li>
+        </a>
+        <a href="schemes.html">
+          <li>Schemes</li>
+        </a>
+        <a href="Patent.html">
+          <li>Patents</li>
+        </a>
+        <a href="chatbot.html">
+          <li>Support</li>
+        </a>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="section">
+        <input type="checkbox" id="edit" class="edit_check" />
+        <label for="edit" class="edit">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK0z3OWNvbMIzpaI5IXnyjFr7sIg6dNhVILg&s"
+            class="edit_pic"
+            alt=""
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/60/60578.png"
+            class="cancel"
+            alt=""
+          />
+        </label>
+        <div class="section_profile">
+          <img src="../assets/profile.png" alt="" />
+          <h3>
+            Name
+            <br />
+            <span>Work</span>
+          </h3>
+        </div>
+        <div class="bar">
+          <div class="bar_item">
+            <h3>Patents</h3>
+            <h3>0</h3>
+          </div>
+          <div class="bar_item">
+            <h3>Schemes</h3>
+            <h3>0</h3>
+          </div>
+          <div class="bar_item">
+            <h3>Projects</h3>
+            <h3>0</h3>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="patent_list display_togle">
+          <h2>All Researches !</h2>
+          <details>
+            <summary>
+              Process of spontaneous dewatering of feed solution using salt
+              bitterns as draw solutions lorem5
+            </summary>
+            <div class="status">Status</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut aut
+              fuga suscipit cum iusto porro voluptatem ex fugit praesentium
+              nulla perspiciatis dolore, velit commodi sint eaque impedit at
+              fugiat nobis. Debitis vero excepturi accusantium quas alias
+              mollitia error ducimus dolor!
+            </p>
+          </details>
+        </div>
+        <div class="research_list display_togle">
+          <h2>All Patents !</h2>
+          <details>
+            <summary>
+              Process of spontaneous dewatering of feed solution using salt
+              bitterns as draw solutions lorem5
+            </summary>
+            <div class="status">Status</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut aut
+              fuga suscipit cum iusto porro voluptatem ex fugit praesentium
+              nulla perspiciatis dolore, velit commodi sint eaque impedit at
+              fugiat nobis. Debitis vero excepturi accusantium quas alias
+              mollitia error ducimus dolor!
+            </p>
+          </details>
+        </div>
+        <div class="display_togle">
+          <h2>Important Links :</h2>
+          <div class="btns_con">
+            <a href="ipr_form.html">
+              <button class="filing_btn">File an IPR</button>
+            </a>
+            <a href="startup_form.html">
+              <button class="filing_btn">Register your Startup</button>
+            </a>
+          </div>
+        </div>
+        <div class="user_details">
+          <div class="card details">
+            <h2>User Details :</h2>
+            <form action="">
+              <div class="content">
+                <p>Name</p>
+                <input
+                  type="text"
+                  name=""
+                  placeholder="Name"
+                  autocomplete="no"
+                  class="editable"
+                  disabled
+                />
+                <p>User-id</p>
+                <input
+                  type="text"
+                  name=""
+                  placeholder="User-id"
+                  autocomplete="no"
+                  class="editable"
+                  disabled
+                />
+                <p>Mobile Number</p>
+                <input
+                  type="number"
+                  id="phone"
+                  class="editable"
+                  name="phone"
+                  placeholder="Enter Your Mobile Number"
+                  oninput="validatePhone(this)"
+                  autocomplete="none"
+                  disabled
+                />
+                <p>Email-id</p>
+                <input
+                  type="email"
+                  name=""
+                  placeholder="email"
+                  autocomplete="no"
+                  class="editable"
+                  disabled
+                />
+                <p>Password</p>
+                <input
+                  type="password"
+                  name=""
+                  placeholder="*******"
+                  autocomplete="no"
+                  class="editable"
+                  disabled
+                />
+                <p>Adhaar Number</p>
+                <input
+                  type="number"
+                  id="phone"
+                  class="editable"
+                  name="phone"
+                  placeholder="Enter Your Adhaar Number"
+                  oninput="validateAdhaarNumber(this)"
+                  autocomplete="none"
+                  disabled
+                />
+                <p>Language</p>
+                <input
+                  type="text"
+                  name=""
+                  placeholder="Language"
+                  autocomplete="no"
+                  class="editable"
+                  disabled
+                />
+                <!-- <p>Name</p>
+                                <input type="text" name="" value="Aryan Srivloremfgrgfrg34vfgdfgdg t trg trgtrastava" autocomplete="no"  class="editable" disabled> -->
+                <!-- <p>Name</p>
+                                <input type="text" name="" value="Aryan Srivastava" autocomplete="no"  class="editable" disabled> -->
+              </div>
+              <button type="submit" class="edit_submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
+    <footer>
+      <b>@2024 - Team HexaCore</b>
+    </footer>
+  </body>
+  <script>
+    var edit = document.getElementById("edit");
+    edit.onclick = () => {
+      var inputs = Array.from(document.querySelectorAll(".editable"));
+      inputs.forEach((element) => {
+        if (element.hasAttribute("disabled") === true) {
+          element.removeAttribute("disabled");
+          edit.textContent = "Cancel";
+          edit.style.backgroundColor = "Green";
+          document.querySelector(".edit_submit").style.display = "block";
+        } else {
+          element.setAttribute("disabled", "");
+          edit.textContent = "Edit";
+          edit.style.backgroundColor = "var(--color)";
+          document.querySelector(".edit_submit").style.display = "none";
+        }
+      });
+    };
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <a href="index.html">Home</a>
-        <a href="#">Profile</a>
-        <a href="schemes.html">Schemes</a>
-        <a href="Patent.html">Patents</a>
-        <a href="chatbot.html">Support</a>
-        <a href="#">Logout</a>
-    </div>
+    function validatePhone(input) {
+      const maxLength = 10;
+      const inputValue = input.value.toString();
 
-    <!-- Main Content -->
-    <div class="main-content">
-        <h1>Welcome to Your Dashboard!</h1>
+      if (inputValue.length > maxLength) {
+        // document.getElementById("phoneError").textContent =
+        //   "Phone number should be up to 10 digits.";
+        input.value = inputValue.slice(0, maxLength); // Truncate input
+      } else {
+        document.getElementById("phoneError").textContent = "";
+      }
+    }
 
-        <div class="card">
-            <h2>Startup Updates</h2>
-            <p>Get the latest updates on your registered startups here.</p>
-        </div>
+    function validateAdhaarNumber(input) {
+      const maxLength = 12;
+      const inputValue = input.value.toString();
 
-        <div class="card">
-            <h2>Profile Information</h2>
-            <p></p>Manage and update your profile details.</p>
-        </div>
-
-        <div class="card">
-            <h2>Funding Opportunities</h2>
-            <p>Explore various funding schemes available for startups.</p>
-        </div>
-
-        <div class="card">
-            <h2>Help & Support</h2>
-            <p>Need assistance? Reach out to our support team.</p>
-        </div>
-
-    </div>
-
-</body>
-
+      if (inputValue.length > maxLength) {
+        // document.getElementById("phoneError").textContent =
+        //   "Phone number should be up to 10 digits.";
+        input.value = inputValue.slice(0, maxLength); // Truncate input
+      } else {
+        // document.getElementById("phoneError").textContent = "";
+      }
+    }
+  </script>
 </html>

@@ -1,38 +1,47 @@
 .template_container {
-    display: flex;
-    gap: 2em;
-    padding: 1em 3em;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  gap: 2em;
+  padding: 1em 3em;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-    & div {
-        width: clamp(250px, 30%, 400px);
-        padding: 1em 2em;
-        border-radius: 10px 0;
-        display: grid;
-        place-items: center;
-        gap: 1em;
-        box-shadow: 0px 0px 5px var(--menu_color);
+  & div {
+    width: clamp(250px, calc(33% - 1em));
+    flex: 1 1 350px;
+    width: minmax(calc(33% - 1em), 450px);
+    min-width: 250px;
+    max-width: calc(33% - 1em);
+    padding: 1em 2em;
+    border-radius: 10px 0;
+    display: grid;
+    place-items: center;
+    gap: 1em;
+    box-shadow: 0px 0px 5px var(--menu_color);
 
-        &h3 {
-            text-align: center;
-        }
-
-        & p {
-            text-overflow: ellipsis;
-            height: 4lh;
-            text-wrap: stable;
-            overflow: hidden;
-        }
-
-        & button {
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-weight: 600;
-            padding: .5em 1em;
-            box-shadow: 0px 0px 5px var(--menu_color);
-            background: var(--background_gradient);
-        }
+    & h3 {
+      text-align: center;
+      text-overflow: ellipsis;
+      height: 3lh;
+      overflow: hidden;
     }
+
+    & p {
+      display: -webkit-box;
+      -webkit-line-clamp: 5; /* Number of lines */
+      -webkit-box-orient: vertical;
+      line-clamp: 5;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    & button {
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: 600;
+      padding: 0.5em 1em;
+      box-shadow: 0px 0px 5px var(--menu_color);
+      background: var(--background_gradient);
+    }
+  }
 }
