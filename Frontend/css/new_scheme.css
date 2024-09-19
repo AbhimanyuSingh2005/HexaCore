@@ -59,3 +59,10 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+.inv_name{
+  color: rgb(116, 115, 115);
+  font-size: 1.2rem;
+  justify-self: start;
+  padding:0 1em;
+}

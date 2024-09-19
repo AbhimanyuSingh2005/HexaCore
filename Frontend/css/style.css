@@ -11,6 +11,8 @@
 body {
   font-size: 1rem;
   background: var(--menu_color);
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 a {

@@ -7,9 +7,11 @@
   height: max-content;
   min-height: 80vh;
   width: calc(100% - 3em);
+  overflow: hidden;
   & .section {
     background-color: white;
     position: relative;
+    width: 100%;
   }
   & .section:first-child {
     border-radius: 50px 5px 5px 50px;
@@ -67,10 +69,12 @@ h2 {
 }
 details {
   padding: 0.5em;
+  display: block;
   border-radius: 10px;
-  background-color: rgb(220, 220, 222);
+  background-color: rgb(242, 240, 240);
   margin: 1em;
-  width: calc(100% - 2em);
+  width: clamp(70vw,calc(100% - 3em),800px);
+  width: 800px;
 
   & summary {
     white-space: nowrap;
@@ -80,6 +84,7 @@ details {
     font-size: 1.4em;
     font-weight: 550;
     padding: 0.5em 1em;
+    background-color: rgb(236, 236, 239);
     /* background-color: rgb(186, 186, 187); */
   }
   & p,
