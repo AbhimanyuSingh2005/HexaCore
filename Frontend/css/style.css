@@ -370,8 +370,8 @@ section {
   & div {
     outline: 2px solid rgb(255, 155, 105);
     outline-offset: 5px;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     border-radius: 5px;
   }
 
