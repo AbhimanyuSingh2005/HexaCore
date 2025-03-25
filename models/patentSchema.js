@@ -1,26 +1,41 @@
 const mongoose = require('mongoose');
 
 const patentSchema = new mongoose.Schema({
-    title: {
+    applicantname: {
         type: String,
         required: true
     },
-    id: {
+    applicantnationalty: {
         type: String,
         required: true,
-        unique: true
     },
-    inventorsInvolved: {
-        type: Array,
-        required: true
-    },
-    applicationStatus: {
+    address: {
         type: String,
         required: true
     },
-    patentNumber: {
+    titleofinnovation: {
         type: String,
         required: true
+    },
+    innovatorname: {
+        type: String,
+        required: true
+    },
+    innovatornationality:{
+        type: String,
+        required: true
+    },
+    mobilenumber:{
+        type: String,
+        required: true
+    },
+    inventoraddress:{
+        type : String,
+        required: true
+    },
+    applicantmail:{
+        type : String,
+        required : true
     }
 });
 

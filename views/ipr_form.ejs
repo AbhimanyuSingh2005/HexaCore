@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/ipr_form.css" />
+    <title>IPR Form</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav_menu">
+        <li>
+          <img src="../assets/logo.jpg" alt="" height="50px" />
+        </li>
+        <!-- <li>
+                  <img src="../assets/logo2.jpg" alt="" srcset="" height="50px">
+              </li> -->
+        <li class="input">
+          <input type="text" placeholder="Search" />
+          <div>
+            <img
+              src="https://aryansrivastava07.github.io/landing-page/assets/search.png"
+              height="10px"
+              alt="something"
+            />
+          </div>
+        </li>
+        <!-- <li class="login">
+            <a href="login.html">
+              <h3>Login</h3>
+            </a>
+            <a href="signup.html">
+              <h3>Sign-up</h3>
+            </a>
+          </li> -->
+        <li class="nav_profile">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/10337/10337609.png"
+            alt="Profile"
+          />
+          <div>
+            <a href="user_dashboard.html"><div>Dashboard</div></a>
+            <div>Log-out</div>
+          </div>
+        </li>
+      </ul>
+      <ul class="nav_option">
+        <a href="/">
+          <li>Home</li>
+        </a>
+        <a href="/">
+          <li>About</li>
+        </a>
+        <a href="/schemes">
+          <li>Schemes</li>
+        </a>
+        <a href="/patent">
+          <li>Patents</li>
+        </a>
+        <a href="/chatbot">
+          <li>Support</li>
+        </a>
+      </ul>
+    </nav>
+    <section>
+      <h2>IPR Form</h2>
+      <form action="/iprform" method="post">
+        <div class="form_body">
+          <div class="form_group">
+            <label for="name">Applicant Name</label>
+            <input type="text" name="applicantname" id="name" placeholder="" required />
+          </div>
+          <div class="form_group">
+            <label for="nationality">Applicant Nationality</label>
+            <input
+              type="text"
+              name="applicantnationalty"
+              id="nationality"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="form_group">
+            <label for="Adress">Address</label>
+            <input
+              type="text"
+              name="address"
+              id="Adress"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="form_group">
+            <label for="title_invention">Title of Invention</label>
+            <input
+              type="text"
+              name="titleofinnovation"
+              id="title_invention"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="form_group">
+            <label for="inventor_name">Inventor Name</label>
+            <input
+              type="text"
+              name="innovatorname"
+              id="inventor_name"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="form_group">
+            <label for="inventor_nationalty">Inventor Nationality</label>
+            <input
+              type="text"
+              name="innovatornationality"
+              id="inventor_nationalty"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="form_group">
+            <label for="inventor_number">Mobile Number with country code</label>
+            <input
+              
+              type="text"
+              name="mobilenumber"
+              id="inventor_number"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="form_group">
+            <label for="inventor_address">Inventor Address</label>
+            <input
+              type="text"
+              name="inventoraddress"
+              id="inventor_address"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="form_group">
+            <label for="inventor_mail">Applicant Email</label>
+            <input
+              type="email"
+              name="applicantmail"
+              id="inventor_mail"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="form_btn">
+            <button type="reset">Clear</button>
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+        <div class="form_ilus">
+          <img
+            src="https://www.jaeronline.com/wp-content/uploads/2020/04/ipr-website.jpg"
+            alt=""
+          />
+        </div>
+      </form>
+    </section>
+    <footer>
+      <b>@2024 - Team HexaCore</b>
+    </footer>
+  </body>
+</html>
